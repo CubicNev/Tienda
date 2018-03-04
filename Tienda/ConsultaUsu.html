@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consulta de usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+    </head>
+
+   <body style="background-image: url(Assets/fondo.jpg);">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-12 justify-content-center">
+                    <h1>Consulta de usuarios</h1>
+                    <form action="" class="form-inline">
+                        <input type="text" class="form-control mr-3" name="correo" id="nombre" placeholder="correo">
+                        <div class="form-group">
+                            <select name="" id="" class="custom-select">
+                                <option value="1" selected>Tipo de usuario</option>
+                                <option value="2">Cliente</option>
+                                <option value="3">Administrador del sistema</option>
+                                <option value="4">Administrador de la Tienda</option>
+                                <option value="5">Proveedor</option>
+                                <option value="6">Almacenista</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Buscar">
+                    </form>
+                    <button class="btn btn-primary" type="submit" onclick="regre()">Regresar</button>
+                </div>
+                <div class="col">
+                    <div class="card-columns">
+                        <div class="card">
+                            <img src="Assets/dogo.jpg" class="card-img-top img-fluid"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Shiba1</h3>
+                                <p class="card-text">Cliente</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Assets/dogo.jpg" class="card-img-top img-fluid"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Shiba2</h3>
+                                <p class="card-text">Administrador de la tienda</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Assets/dogo.jpg" class="card-img-top img-fluid"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Shiba3</h3>
+                                <p class="card-text">Administrador del sistema</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Assets/dogo.jpg" class="card-img-top img-fluid"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Shiba4</h3>
+                                <p class="card-text">Proveedor</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Assets/dogo.jpg" class="card-img-top img-fluid"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Shiba5</h3>
+                                <p class="card-text">Almacenista</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function regre() {
+                window.location = "AdmonUsuarios.html";
+            }
+        </script>
+        <script src="JS/jquery-3.2.1.min.js"></script>
+        <script src="JS/popper.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+    </body>
+</html>
