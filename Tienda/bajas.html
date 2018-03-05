@@ -1,0 +1,30 @@
+<html>
+<title>
+Bajas
+</title>
+<script type="text/javascript">
+function Confirm(){
+var mensaje = confirm("¿Seguro que quieres eliminar este producto?");
+
+if (mensaje) {
+alert("¡Producto eliminado!");
+}
+
+else {
+alert("¡Producto no eliminado!");
+}
+}
+</script>
+<body>
+<header>
+<h1>Elimina productos</h1>
+</header>
+<form>
+<input type="text"placeholder="Escribe el nombre del producto que desees eliminar" size="75"><br>
+
+<input type="submit" value="Eliminar" onclick="Confirm()" class="button">
+<input type="reset" value="limpiar" class="button">
+<a href="inventario.html"><input type="button" value="regresar"></a>
+</form>
+</body>
+<html>
