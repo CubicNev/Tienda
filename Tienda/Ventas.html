@@ -5,25 +5,333 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="Css/bootstrap.min.css">
     <title>Ventas</title>
+    <style>
+      :root {
+      --jumbotron-padding-y: 3rem;
+      }
+
+      .jumbotron {
+      padding-top: var(--jumbotron-padding-y);
+      padding-bottom: var(--jumbotron-padding-y);
+      margin-bottom: 0;
+      background-color: #fff;
+      }
+      @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+      }
+      }
+
+      .jumbotron p:last-child {
+      margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+      font-weight: 300;
+      }
+
+      .jumbotron .container {
+      max-width: 40rem;
+      }
+
+      footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      }
+
+      footer p {
+      margin-bottom: .25rem;
+      }
+
+      .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+    </style>
   </head>
-  <body>
-    <header>
-        <div class="navbar navbar-dark bg-dark box-shadow">
-          <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-              <!--Foto-->
-              <strong>Ventas</strong>
-            </a>
-          </div>
-        </div>
-    </header>
+  <body style="background-color:#f1f1f1;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="Ventas.html"><img src="Assets/Ventas.svg" alt="" width=20px> Ventas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Volver al inicio</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Tipo de producto" aria-label="Buscar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="Assets/search.svg" alt="" width=10px> Buscar</button>
+        </form>
+      </div>
+    </nav>
 
     <main role="main">
-      <div class="container">
-        
-      </div>
-    </main>
 
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Bienvenido a la seccion para comprar productos</h1>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/coca.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/xbox.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/rolex.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/prro.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/pc.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/those.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/rgb.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/resnick.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$1000.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow text-center">
+                    <img class="card-img-top" src="Assets/papa.jpg" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del producto</h5>
+                      <p class="card-text">
+                        [Descripcion del producto]
+                        <br><small class="text-muted">$10.00</small>
+                      </p>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button">
+                          Forma de pago
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Tarjeta de credito</a>
+                          <a class="dropdown-item" href="#">Tarjeta de debito</a>
+                          <a class="dropdown-item" href="#">Paypal</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#fm-modal">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="">Nombre del producto</h5>
+                              <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+
+                          <div class="modal-body">
+                              <form action="">
+                                  <div class="form-group">
+                                      <h5>Costo: <small class="text-muted">$10.00</small></h5>
+                                      <h5>Fecha:<small class="text-muted">06/03/2018</small><br></h5>
+                                      <label for="nombre">Ingresa tu numero de cuenta</label>
+                                      <input type="text" class="form-control" placeholder="Numero de cuenta" name="nCuenta" id="nCuenta" required="">
+                                  </div>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                  <button class="btn btn-primary" type="submit" onclick="compra()" data-dismiss="modal">Registrar</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </main><!-- /.container -->
+
+    <script>
+      function compra() {
+        alert('Compra hecha');
+      }
+    </script>
     <script src="JS/jquery-3.2.1.min.js"></script>
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
