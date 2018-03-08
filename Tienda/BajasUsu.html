@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="Css/bootstrap.min.css">
     </head>
 
-    <body style="background-image: url(Assets/fondo.jpg);">
+    <body style="background-color:#eaeef2;">
         <div class="container">
             <div class="row mt-3">
                 <div class="col-12 justify-content-center">
@@ -24,26 +24,20 @@
                                 <option value="6">Almacenista</option>
                             </select>
                         </div>
-                        <input type="submit" class="btn btn-success" value="Buscar">
+                       
                     </form>
-                    <button class="btn btn-primary" type="submit" onclick="regre()">Regresar</button>
-                </div>
-
-                <div class="col-auto justify-content-center">
-                    <div class="card">
-                        <img src="Assets/dogo.jpg" class="card-img-top img-fluid" alt="">
-                        <div class="card-body">
-                            <h3 class="card-title">Shiba</h3>
-                            <p class="card-text">Administrador de la tienda</p>
-                            <a href="#" class="btn btn-primary btn-lg btn-block">Eliminar</a>
-                        </div>
-                    </div>
+                     <button class="btn btn-secondary" type="submit" onclick="ir()">Buscar</button>
+                    <button class="btn btn-secondary" type="submit" onclick="regre()">Regresar</button>
                 </div>
             </div>
         </div>
         <script>
             function regre() {
                 window.location = "AdmonUsuarios.html";
+            }
+            function ir(){
+
+                window.location="BajasUsu2.html";
             }
         </script>
         <script src="JS/jquery-3.2.1.min.js"></script>

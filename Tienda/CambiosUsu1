@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modificacion de usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+    </head>
+
+    <body style="background-color:#eaeef2;">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-12 justify-content-center">
+                    <h1>Modificacion de usuario</h1>
+                    <form action="" class="form-inline">
+                        <input type="text" class="form-control mr-3" name="correo" id="nombre" placeholder="correo">
+                        <div class="form-group">
+                            <select name="" id="" class="custom-select">
+                                <option value="1" selected>Seleccione el tipo de usuario</option>
+                                <option value="2">Cliente</option>
+                                <option value="3">Administrador del sistema</option>
+                                <option value="4">Administrador de la Tienda</option>
+                                <option value="5">Proveedor</option>
+                                <option value="6">Almacenista</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Buscar">
+                    </form>
+                    <button class="btn btn-secondary" type="submit" onclick="regre()">Regresar</button>
+                </div>
+
+                <div class="col-auto justify-content-center">
+                    <div class="card">
+                        <img src="Assets/dogo.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Shiba</h3>
+                            <p class="card-text">Administrador de la tienda</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#fm-modal">Modificar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="">Modificacion de datos de usuario</h5>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre" required="" value="shiba">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nombre">Apellidos</label>
+                                        <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos" required="" value="inu">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <select name="" id="" class="custom-select">
+                                            <option value="1">Tipo de usuario</option>
+                                            <option value="2">Cliente</option>
+                                            <option value="3">Administrador del sistema</option>
+                                            <option value="3" selected>Administrador de la Tienda</option>
+                                            <option value="2">Proveedor</option>
+                                            <option value="2">Almacenista</option>
+                                            <option value="2">Cliente</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="mensaje">Numero telefonico</label>
+                                        <input type="number" name="numero" id="numero" placeholder="Numero telefonico" class="form-control" required="" value="55 43234453">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="mensaje">Dirreccion</label>
+                                        <input type="text" name="Dirreccion" id="Dirreccion" placeholder="Dirreccion" class="form-control" required="" value="en una casa">
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="mensaje">Contraseña</label>
+                                        <input type="text" name="contra" id="contra" placeholder="Contraseña" class="form-control " required="" value="croquetas">
+                                    </div>
+
+                                    
+                                </form>
+                                <button class="btn btn-secondary" type="button" onclick="regi()">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function regre() {
+                window.location = "AdmonUsuarios.html";
+            }
+            function regi(){
+                alert("Usuario modificado");
+                window.location = "CambiosUsu.html";
+            }
+        </script>
+        <script src="JS/jquery-3.2.1.min.js"></script>
+        <script src="JS/popper.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+    </body>
+</html>

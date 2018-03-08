@@ -1,47 +1,65 @@
+
 <html>
-<title>
-Altas
-</title>
-<head>
-<style>
-body {
-    background-color: lightblue;
-}
-.button{
-	background-color: yellow; 
-    color: black; 
-    border: 2px solid #f44336;
-}
-.button:hover{
-background-color: #f44336;
-    color: white;
-}
-</style>
-</head>
-<body>
-<header>
-<center>
-<h1>Agrega tus nuevos productos</h1>
-</center>
-</header>
-<form method="post" action="ingreso.html">
-<input type="text" placeholder="Ingresa el nombre del producto" size="50" required/><br><br>
-<input type="text" placeholder="Ingresa la marca del producto" size="50" required/><br><br>
-Ingresa la fecha de caducidad<br>
-<input type="date"placeholder = "Ingresa la fecha de caducidad" required/><br>
-<form>
-Seleccione en que tipo de envase viene<br>
-Litros<input type="radio" value="litros" name="envase" checked/> <br>
-Kilos<input type="radio" value="kilogramos" name="envase"><br>
-Galones <input type="radio" value="Galones" name="envase"><br>
-Gramos <input type="radio" value="gramos" name="envase"><br>
-Piezas <input type="radio" value="piezas" name="envase"><br>
-Mililitros <input type="radio" value="mili" name="envase"><br>
-<input type="text" placeholder="Ingrese la cantidad del producto" size="50" required/><br><br>
-<input type="text" placeholder="Ingrese el nombre del proveedor" size="50" required/><br><br>
-<input type="submit" value="Ingresa el producto" class="button">
-<input type="reset" value="limpiar" class="button">
-<a href="inventario.html"><input type="button" value="regresar"></a>
-</form>
-</body> 
-<html>
+    <title>
+        Altas
+    </title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <head>
+        <style>
+            body {
+                background-color: lightblue;
+            }
+            .button{
+                background-color: yellow; 
+                color: black; 
+                border: 2px solid #f44336;
+            }
+            .button:hover{
+                background-color: #f44336;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="background-color:#eaeef2;">
+    	<div class="row">
+    		<div class="col">
+    			<h1>Agrega tus nuevos productos</h1>
+    		</div>
+    	</div>
+        <div class="row">
+        	<div class="col">
+        		<form method="post" action="ingreso.html">
+            	<input type="text" placeholder="Ingresa el nombre del producto" size="50" required/><br><br>
+            	<input type="text" placeholder="Ingresa la marca del producto" size="50" required/><br><br>
+            	Ingresa la fecha de caducidad<br>
+            	<input type="date"placeholder = "Ingresa la fecha de caducidad" required/><br>
+            	<form>
+                Seleccione en que tipo de envase viene<br>
+                Litros<input type="radio" value="litros" name="envase" checked/> <br>
+                Kilos<input type="radio" value="kilogramos" name="envase"><br>
+                Galones <input type="radio" value="Galones" name="envase"><br>
+                Gramos <input type="radio" value="gramos" name="envase"><br>
+                Piezas <input type="radio" value="piezas" name="envase"><br>
+                Mililitros <input type="radio" value="mili" name="envase"><br>
+                <input type="text" placeholder="Ingrese la cantidad del producto" size="50" required/><br><br>
+                <input type="text" placeholder="Ingrese el nombre del proveedor" size="50" required/><br><br>
+                
+                <input type="reset" value="limpiar" class="btn btn-secondary">
+                
+            </form>
+            <input type="button" value="Ingresa el producto" class="btn btn-secondary" onclick="ingre()">
+            <a href="inventario.html"><input type="button" class="btn btn-secondary" value="regresar"></a>
+        	</div>	
+        </div>
+        
+    </body>
+    <script type="text/javascript">
+    	function ingre(){
+    		alert("Producto registrado");
+    		window.location = "altas.html";
+    	}
+    </script>
+    <script src="JS/jquery-3.2.1.min.js"></script>
+	<script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script> 
+</html>

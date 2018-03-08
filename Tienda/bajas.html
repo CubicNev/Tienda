@@ -1,30 +1,38 @@
+<!DOCTYPE html>
 <html>
-<title>
-Bajas
-</title>
-<script type="text/javascript">
-function Confirm(){
-var mensaje = confirm("¿Seguro que quieres eliminar este producto?");
+    <head>
+        <title>Bajas de producto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+    </head>
 
-if (mensaje) {
-alert("¡Producto eliminado!");
-}
+    <body style="background-color:#eaeef2;">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-12 justify-content-center">
+                    <h1>Baja de productos de inventario</h1>
+                    <form action="" class="form-inline">
+                        <input type="text" class="form-control mr-3" name="correo" id="nombre" placeholder="nombre del producto">
+                        
+                    </form>
+                     <button class="btn btn-secondary" type="submit" onclick="ir()">Buscar</button>
+                    <button class="btn btn-secondary" type="submit" onclick="regre()">Regresar</button>
+                </div>
 
-else {
-alert("¡Producto no eliminado!");
-}
-}
-</script>
-<body>
-<header>
-<h1>Elimina productos</h1>
-</header>
-<form>
-<input type="text"placeholder="Escribe el nombre del producto que desees eliminar" size="75"><br>
+            </div>
+        </div>
+        <script>
+            function regre() {
+            	window.location="Inventario.html";
+            }
+            function ir(){
 
-<input type="submit" value="Eliminar" onclick="Confirm()" class="button">
-<input type="reset" value="limpiar" class="button">
-<a href="inventario.html"><input type="button" value="regresar"></a>
-</form>
-</body>
-<html>
+                window.location="baja2.html";
+            }
+        </script>
+        <script src="JS/jquery-3.2.1.min.js"></script>
+        <script src="JS/popper.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+    </body>
+</html>
