@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="Css/bootstrap.min.css" type="text/css">
     <title>Productos</title>
+	<style>
+	   .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+       margin:8px;	   }
+	</style>
   </head>
-  <body style="background-color:#eaeef2;">
+  <body style="background-color:#f1f1f1;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="Ventas.html"><img src="Assets/milk-box.svg" alt="" width=20px> Productos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Volver al inicio</a>
+          </li>
+        </ul>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#ModalNuevoProducto">
+		    <img src="Assets/add.svg" style="width:10px;margin:9px;">Agregar Producto
+		  </button>
+		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#ModalProductoConsultar">
+		    <img src="Assets/search.svg" style="width:10px;margin:9px;">Consultar Producto
+		  </button>
+      </div>
+    </nav>
     <div class="container-fluid">
-            <div class="row">
-                <div class="col-12" style="background-color:#d4e5fc;padding:10px;font-size:35px;color:#fff;text-height:35px;font-weight:bold;">
-                    <a href="Menu.html"><img src="Assets/milk-box.svg" style="height:50px;width:50px;"></a>
-                    <a>Lista productos</a>
-                    <button class="float-right btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalNuevoProducto" style="font-size:22px;">
-                      <a style="margin-right:7px;margin-left:20px;">Agregar Producto</a>
-                      <img src="Assets/add.svg" style="height:25px; width:25px; margin-top:10px ;margin:15px;">
-                    </button>
-                    <button class="float-right btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalProductoConsultar" style="font-size:22px;margin-right:15px;">
-                      <a style="margin-right:7px;margin-left:20px;">Consultar Producto</a>
-                      <img src="Assets/search.svg" style="height:25px; width:25px; margin-top:10px; margin:15px;">
-                    </button>
-                </div>
-            </div>
 
             <!--Modal de Nuevo Producto-->
             <div class="modal fade" id="ModalNuevoProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -53,7 +63,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary"  >Guardar Producto</button>
+                        <button type="button" class="btn btn-primary"  data-dismiss="modal" >Guardar Producto</button>
                     </div>
                 </div>
             </div>
@@ -97,98 +107,48 @@
         <div class="row">
             <div class="col-12" style="margin:10px;">
                 <div class="card-group">
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:100%" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto2.png"  style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto2.png"  style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:300px;" alt="ImagenProducto">
-                        <div class="card-body">
-                            <p class="card-text">Precio:</p>
-                            <p class="card-text">Nombre:</p>
-                            <p class="card-text">Oferta:</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-group">
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
-                        <div class="card-body">
-                            <p class="card-text">Precio:</p>
-                            <p class="card-text">Nombre:</p>
-                            <p class="card-text">Oferta:</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:300px;" alt="ImagenProducto">
-                        <div class="card-body">
-                            <p class="card-text">Precio:</p>
-                            <p class="card-text">Nombre:</p>
-                            <p class="card-text">Oferta:</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
-                        <div class="card-body">
-                            <p class="card-text">Precio:</p>
-                            <p class="card-text">Nombre:</p>
-                            <p class="card-text">Oferta:</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:300px;" alt="ImagenProducto">
-                        <div class="card-body">
-                            <p class="card-text">Precio:</p>
-                            <p class="card-text">Nombre:</p>
-                            <p class="card-text">Oferta:</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
-                        <div class="card-body">
-                            <p class="card-text">Precio:</p>
-                            <p class="card-text">Nombre:</p>
-                            <p class="card-text">Oferta:</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow">
+                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
@@ -197,48 +157,48 @@
                     </div>
                 </div>
                 <div class="card-group">
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow">
+                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow">
+                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow">
+                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
@@ -247,48 +207,98 @@
                     </div>
                 </div>
                 <div class="card-group">
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto4.jpg"  style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto4.jpg"  style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
                             <p class="card-text">Oferta:</p>
                         </div>
                     </div>
-                    <div class="card" style="width:25rem;margin:7px;border-width:2px;border-color:#d4d7db;">
-                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:300px;" alt="ImagenProducto">
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto3.png" style="height:300px;width:100%;" alt="ImagenProducto">
+                        <div class="card-body">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">Nombre:</p>
+                            <p class="card-text">Oferta:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="card" box-shadow>
+                        <img class="card-img-top" src="Assets/producto4.jpg"  style="height:300px;width:100%;" alt="ImagenProducto">
+                        <div class="card-body">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">Nombre:</p>
+                            <p class="card-text">Oferta:</p>
+                        </div>
+                    </div>
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto1.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
+                        <div class="card-body">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">Nombre:</p>
+                            <p class="card-text">Oferta:</p>
+                        </div>
+                    </div>
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto4.jpg"  style="height:300px;width:100%;" alt="ImagenProducto">
+                        <div class="card-body">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">Nombre:</p>
+                            <p class="card-text">Oferta:</p>
+                        </div>
+                    </div>
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto5.png" style="height:300px;width:100%;" alt="ImagenProducto">
+                        <div class="card-body">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">Nombre:</p>
+                            <p class="card-text">Oferta:</p>
+                        </div>
+                    </div>
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto2.png" style="height:300px;width:100%;" alt="ImagenProducto">
+                        <div class="card-body">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">Nombre:</p>
+                            <p class="card-text">Oferta:</p>
+                        </div>
+                    </div>
+                    <div class="card box-shadow" >
+                        <img class="card-img-top" src="Assets/producto4.jpg" style="height:300px;width:100%;" alt="ImagenProducto">
                         <div class="card-body">
                             <p class="card-text">Precio:</p>
                             <p class="card-text">Nombre:</p>
@@ -304,3 +314,4 @@
     <script src="JS/bootstrap.min.js"></script>
   </body>
 </html>
+
