@@ -312,17 +312,44 @@
                               <form action="">
                                   <div class="form-group">
                                       <h5>Costo: <small class="text-muted">$10.00</small></h5>
-                                      <h5>Fecha:<small class="text-muted">06/03/2018</small><br></h5>
+                                      <h5>Fecha:<small class="text-muted">08/03/2018</small><br></h5>
                                       <label for="nombre">Ingresa tu numero de cuenta</label>
                                       <input type="text" class="form-control" placeholder="Numero de cuenta" name="nCuenta" id="nCuenta" required="">
                                   </div>
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                  <button class="btn btn-primary" type="submit" onclick="compra()" data-dismiss="modal">Registrar</button>
+                                  <button class="btn btn-primary" type="submit" onclick="compra()" data-toggle="modal" data-target="#recibo" data-dismiss="modal">Registrar</button>
                               </form>
                           </div>
                       </div>
                   </div>
               </div>
+
+              <div class="modal fade" id="recibo" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="">Recibo</h5>
+                              <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+
+                          <div class="modal-body">
+                              <form action="">
+                                  <div class="form-group">
+                                      <h5>Nombre producto: <small class="text-muted">Producto</small></h5>
+                                      <h5>Costo pagado: <small class="text-muted">$10.00</small></h5>
+                                      <h5>Fecha: <small class="text-muted">08/03/2018</small><br></h5>
+                                  </div>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                  <button class="btn btn-primary" type="submit" data-dismiss="modal">Imprimir</button>
+                                  <button class="btn btn-primary" type="submit" data-dismiss="modal">Guardar</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
           </div>
         </div>
     </main><!-- /.container -->
